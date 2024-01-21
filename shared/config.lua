@@ -7,9 +7,9 @@ exports('GetApartments', function() return ApartmentsTable end)
 Config = {}
 
 -- If you're not utilizing ox_lib, it's time to question your approach.
-Config.Target = "ox" -- "ox" or "qb"
-Config.Notify = "ox" -- "ox" or "qb"
-Config.Radial = "ox" -- "ox" or "qb"
+Config.Target = "qb" -- "ox" or "qb"
+Config.Notify = "qb" -- "ox" or "qb"
+Config.Radial = "qb" -- "ox" or "qb"
 Config.Inventory = "qb" -- "ox" or "qb"
 Config.Logs = "qb" -- "qb"
 
@@ -29,7 +29,7 @@ end
 Config.EnableLogs = true
 
 -- Enables Dynamic Doors
-Config.DynamicDoors = false
+Config.DynamicDoors = true
 
 Config.PoliceJobNames = {  -- add multiple police jobs that are allowed to raid properties!
     "police",
@@ -54,11 +54,11 @@ Config.QBManagement = false
 
 -- Realtor Commisions based on job grade, the rest goes to the owner, if any.
 Config.Commissions = {
-    [0] = 0.05, -- 5% commision for each sale
-    [1] = 0.10,
-    [2] = 0.15,
-    [3] = 0.20,
-    [4] = 0.25,
+    [0] = 0.01, -- 1% commision for each sale
+    [1] = 0.02,
+    [2] = 0.03,
+    [3] = 0.04,
+    [4] = 0.05,
 }
 
 -- Set this value to false if you don't want to assign a starting apartment.
