@@ -15,7 +15,8 @@ Shell.__index = Shell
 
 
 function Shell:SpawnShell(shellHash, position, rotation)
-    lib.requestModel(shellHash)
+    --lib.requestModel(shellHash)
+    lib.requestModel(shellHash, 30000) -- added by pamela for shell loading
 
     local entity = CreateObjectNoOffset(shellHash, position.x, position.y, position.z, false, false, false)
     FreezeEntityPosition(entity, true)
