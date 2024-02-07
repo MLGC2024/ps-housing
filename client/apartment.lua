@@ -47,6 +47,7 @@ function Apartment:EnterApartment()
         local property = PropertiesTable[propertyId]
         if property.owner then
             TriggerServerEvent('ps-housing:server:enterProperty', propertyId)
+            TriggerEvent('wais:addmissionxp:enterprop', 1) --added by pamela for wais battlepass
             return
         end
     end

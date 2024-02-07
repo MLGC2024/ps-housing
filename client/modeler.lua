@@ -480,6 +480,7 @@ Modeler = {
         end
 
         TriggerServerEvent("ps-housing:server:buyFurniture", self.property_id, items, totalPrice)
+        TriggerEvent('wais:addmissionxp:buyfurn', 1) --added by pamela for wais battlepass
 
         self:ClearCart()
     end,
